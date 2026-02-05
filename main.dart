@@ -37,7 +37,7 @@ class _menuscreen extends State<menuscreen>{
   late String cm;
   late String data = "OUTPUT";
   void cgi() async {
-    var r = await http.get(Uri.http("15.207.112.146","/cgi-bin/docker.py",{"x": cm}));
+    var r = await http.get(Uri.http("15.207.112.xxx","/cgi-bin/docker.py",{"x": cm}));
     data = r.body.toString();
     setState(() {
       data;
@@ -132,3 +132,4 @@ class _menuscreen extends State<menuscreen>{
     );
   }
 }
+
